@@ -1,0 +1,186 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %} Index Page Title {% endblock %}
+
+{% block body %}
+<hr class="separator">
+  <style type="text/css">
+   IMG.figg {
+    float: right; /* Обтекание картинки по левому краю */
+    padding-right: 10px; /* Отступ слева */
+    padding-bottom: 10px; /* Отступ снизу */
+   }
+  </style>
+<div class="row">
+        <div class="col-sm-6">
+            <img src="/static/main/Corona-740x200.jpg" width="740" height="200" class="figg"  >
+        </div>
+        <div class="col-sm-5 my-auto">
+            <p class="text-center">
+            <h4>Коронавирусная инфекция</h4> COVID-19 воздействует на различные группы людей в разной степени. У большинства инфицированных болезнь протекает в легкой или средней форме тяжести, и им не требуется госпитализация.
+            <p>Если у вас наблюдаются симптомы тяжелой формы заболевания, незамедлительно обратитесь за медицинской помощью. Прежде чем посещать клинику или больницу, позвоните и предупредите о своем визитe.
+        </div>
+</div>
+<hr class="separator">
+<style>
+ .separator {
+   height: 7px;
+   background: #0DCAF0;
+   margin: 50px 0;
+   box-shadow: 0px 0px 5px 3px rgba(0,205,255,1);
+}
+</style>
+  <style type="text/css">
+   IMG.fig {
+    float: right; /* Обтекание картинки по левому краю */
+    padding-left: 10px; /* Отступ слева */
+    padding-bottom: 10px; /* Отступ снизу */
+   }
+  </style>
+<div class="col-sm-12">
+    <h3>Красивая версия вашего здоровья</h3>
+    <img src="{% static 'main/meds.jpg' %}" width="250" height="250" class="fig">
+    <div class="col-sm-12"
+        <p class="text-center"
+        <p><b>Diqten Clinic</b> готова порадовать Вас полным комплексом услуг в области косметологии, стоматологии, пластической хирургии и anti-age медицине.
+        В основу работы Медцентра на Победителей 135 в Лебяжем заложены высокие стандарты обслуживания, соответствующие лучшим клиникам и медучреждениям Нур-Султана.
+        Выдающиеся результаты достигаются благодаря усилиям высококвалифицированных специалистов, новейшему европейскому оборудованию, а также соблюдению основных принципов лечения:</p>
+
+    <p>- Комплексный подход к работе с каждым пациентом.</p>
+    <p>- Индивидуально разработанные схемы лечения и восстановления.</p>
+    <p>- Строгое соответствие мировым лечебным стандартам.</p>
+    <p>- Высокая ответственность за результат.</p>
+</div>
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Кнопка</title>
+  <style>
+   .btn {
+    display: inline-block; /* Строчно-блочный элемент */
+    background: #1C759D; /* Синий цвет фона */
+    color: #fff; /* Белый цвет текста */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-radius: 3px; /* Скругляем уголки */
+    width:100%
+   }
+  </style>
+ </head>
+<div class="text-center"
+ <body>
+  <a href="{% url 'main:zapic'%}" class="btn">Записаться на прием</a>
+ </body>
+</html>
+<hr class="separator"
+<div class="card">
+<style>
+.team-boxed {
+  color:#0DCAF0;
+  background-color:#eef4f7;
+}
+
+.team-boxed p {
+  color:#7d8285;
+}
+
+.team-boxed h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .team-boxed h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.team-boxed .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.team-boxed .intro p {
+  margin-bottom:0;
+}
+
+.team-boxed .people {
+  padding:50px 0;
+}
+
+.team-boxed .item {
+  text-align:center;
+}
+
+.team-boxed .item .box {
+  text-align:center;
+  padding:30px;
+  background-color:#fff;
+  margin-bottom:30px;
+}
+
+.team-boxed .item .name {
+  font-weight:bold;
+  margin-top:28px;
+  margin-bottom:8px;
+  color:#0DCAF0;
+}
+
+.team-boxed .item .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#d0d0d0;
+  letter-spacing:2px;
+  font-size:13px;
+}
+
+.team-boxed .item .description {
+  font-size:15px;
+  margin-top:15px;
+  margin-bottom:20px;
+}
+
+.team-boxed .item img {
+  max-width:160px;
+}
+
+.team-boxed .social {
+  font-size:18px;
+  color:#0DCAF0;
+}
+
+.team-boxed .social a {
+  color:inherit;
+  margin:0 10px;
+  display:inline-block;
+  opacity:0.7;
+}
+
+.team-boxed .social a:hover {
+  opacity:1;
+}
+
+                </style>
+    <div class="team-boxed"
+            <div class="row people">
+                <div class="col-md-6 col-lg-12 item">
+                    <div class="box"><img class="rounded-circle" src="/static/main/sergei.jpg">
+                        <h3 class="name">Cергей Тестович</h3>
+                        <p class="title">Кардиолог</p>
+                        <p class="description"> Получил большой опыт в зарубежных клиниках. Использует навыки, знания и опыт в предупреждении и лечении заболеваний. Руководитель отдела интервенционной кардиологии и радиологии в "Национальном Научном Кардиохирургическом Центре". Отличник здравоохранения Республики Казахстан. Автор более 80 научных публикаций по проблемам кардиохирургии, интервенционной кардиологии, эхокардиографии, двух подтвержденных изобретений и 16 актов внедрения.  </p>
+
+                        <body>
+                            <a href="{% url 'main:zapic'%}" class="btn btn-info">Записаться</a>
+                        </body>
+                    </div>
+                </div>
+<hr class="separator"
+{% endblock %}

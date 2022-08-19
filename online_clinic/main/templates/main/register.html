@@ -1,0 +1,50 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %} Index Page Title {% endblock %}
+
+{% block body %}
+<hr class="separator">
+<style>
+ .separator {
+   height: 7px;
+   background: #0DCAF0;
+   margin: 15px 0;
+   box-shadow: 0px 0px 5px 3px rgba(0,205,255,1);
+}
+</style>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h3>Регистрация</h3>
+            </div>
+        </div>
+<hr class="separator">
+    <div class="row">
+        <div class="col-sm-2 mx-auto">
+            <form method="post" class="form mx-auto">
+                {% if error %}
+                    <p class="text-danger">{{ error }}</p>
+                {% endif %}
+                <div class="input-group">
+                    {% csrf_token %}
+                    <input type="text" class="form-control w-25" placeholder="Имя пользователя" name="username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" class="form-control w-25" placeholder="Пароль" name="password" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control w-25" placeholder="Почта" name="email" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control w-25" placeholder="Фамилия" name="last_name" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control w-25" placeholder="Имя" name="first_name" required>
+                </div>
+
+                <input type="submit" class="btn btn-info col-sm-12 mx-auto" value="Зарегистрироваться">
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

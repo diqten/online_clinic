@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+   .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 25px 0px 0px 0; /* Отступы вокруг картинки */
+   }
+  </style>
+
+  <a class="center-block text-center" href="{% url 'main:index_page'%}">
+      <img src="{% static 'main/iconic.png' %}" width="120" height="110" alt="icon" title="diqten" class="leftimg">
+  </a>
+  <header>
+    <div class="container"
+        <div class="row">
+            <div class="phones text-center col-sm-12"><p class="time">Звоните сегодня с 08:00 до 20:00</p>
+                <p><a href="tel:+77055360303"><span class="glyphicon glyphicon-earphone" aria-hidden="true"> </span> +7 (775) 609-34-45</a></p>
+                <p><a href="tel:+77777070707"><span class="glyphicon glyphicon-earphone" aria-hidden="true"> </span> +7 (777) 707-07-07</a></p>
+                <p><a href="tel:+77055555505"><span class="glyphicon glyphicon-earphone" aria-hidden="true"> </span> +7 (705) 555-55-05</a></p>
+                <p style="display:none"><a href="tel:+77172660303"><span class="glyphicon glyphicon-earphone" aria-hidden="true"> </span> +7 (7172) 66-03-03</a></p>
+            </div>
+        </div>
+    </div>
+  </header>
+</div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body class="container-fluid">
+    {% include "main/header.html" %}
+    {% block body %}
+
+    {% endblock %}
+    {% include "main/footer.html" %}
+</body>
+</html>

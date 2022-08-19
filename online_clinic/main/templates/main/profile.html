@@ -1,0 +1,15 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %} Profile Page Title {% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>ФИ: {{ user.last_name }} {{ user.first_name }}</h2>
+            <p>Почта: {{ user.email }}</p>
+            <p>Пароль: {{ user.password }}</p>
+        </div>
+    </div>
+
+{% endblock %}
